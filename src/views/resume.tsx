@@ -1,0 +1,204 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowLeft, Download, Globe, Mail, MapPin, Phone } from "lucide-react";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Button } from "@/components/ui/button";
+import ThemeToggler from "@/components/theme/toggler";
+import LanguageSwitcher from "@/components/language-switcher";
+import { getResume } from "@/config/localized";
+import { getDictionary, languageAlternates, localePath, type Locale } from "@/i18n";
+import { siteConfig } from "@/config/site.config";
+
+// The original CV PDF (replace public/pham-quoc-huy-cv.pdf to update it)
+export const cvPdfPath = (_locale: Locale) => `/pham-quoc-huy-cv.pdf`;
+
+export function resumeMetadata(locale: Locale = "en"): Metadata {
+  const resumeConfig = getResume(locale);
+  const t = getDictionary(locale).cv;
+  return {
+    title: `${t.pageTitle} | ${siteConfig.creator.name}`,
+    description: `${resumeConfig.name} — ${resumeConfig.title}. ${resumeConfig.summary}`,
+    alternates: languageAlternates("/cv", locale),
+  };
+}
+
+const icons = {
+  address: <MapPin size={14} className="shrink-0" />,
+  phone: <Phone size={14} className="shrink-0" />,
+  mail: <Mail size={14} className="shrink-0" />,
+  globe: <Globe size={14} className="shrink-0" />,
+  github: <GitHubLogoIcon width={13} height={13} />,
+  linkedin: <LinkedInLogoIcon width={13} height={13} />,
+};
+
+// Canva-style section: navy uppercase heading over a full-width rule
+const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
+  <section className="mt-6 lg:mt-8">
+    <h2 className="text-[16px] lg:text-[17px] font-bold uppercase tracking-wide text-[#1F3A5F] border-b border-[#1F3A5F]/70 pb-1 mb-3 break-after-avoid">
+      {title}
+    </h2>
+    {children}
+  </section>
+);
+
+const Entry = ({
+  title,
+  period,
+  role,
+  summary,
+  items,
+  children,
+}: {
+  title: React.ReactNode;
+  period: string;
+  role: string;
+  summary: string;
+  items: string[];
+  children?: React.ReactNode;
+}) => (
+  <article className="break-inside-avoid">
+    <div className="flex flex-wrap justify-between items-baseline gap-x-4">
+      <h3 className="font-bold">{title}</h3>
+      <span className="text-[#1a1a1a] text-[13px] sm:text-[14px] lg:text-[15px]">{period}</span>
+    </div>
+    <p className="italic text-[#1a1a1a]">{role}</p>
+    {summary && <p className="mt-1">{summary}</p>}
+    <ul className="mt-1 list-disc pl-5 space-y-1">
+      {items.map((r) => (
+        <li key={r}>{r}</li>
+      ))}
+    </ul>
+    {children}
+  </article>
+);
+
+export default function ResumeView({ locale = "en" }: { locale?: Locale }) {
+  const resumeConfig = getResume(locale);
+  const t = getDictionary(locale).cv;
+  const home = localePath(locale, "/");
+  const pdf = cvPdfPath(locale);
+
+  return (
+    <div className="w-full min-h-screen bg-muted/40 lg:h-screen lg:overflow-y-auto print:bg-white print:h-auto print:min-h-0 print:overflow-visible">
+      <main className="w-full max-w-[860px] lg:max-w-[920px] mx-auto px-4 py-4 md:py-10 print:p-0 print:max-w-none">
+        {/* Toolbar */}
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-4 md:mb-5 print:hidden">
+          <Link href={home} className="group/back flex items-center gap-1 text-sm">
+            <ArrowLeft size={16} className="group-hover/back:-translate-x-1 transition-transform" />
+            {t.home}
+          </Link>
+          <p className="hidden sm:block text-sm text-foreground/80">{t.webNote}</p>
+          <div className="flex items-center gap-1">
+            <LanguageSwitcher />
+            <ThemeToggler />
+            <Button size="sm" className="ml-1 shadow-none" asChild>
+              <a href={pdf} download>
+                <Download size={14} />
+                {t.downloadPdf}
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        {/* Paper: always light, like a printed A4 page */}
+        <div
+          id="cv-paper"
+          className="bg-white text-black shadow-sm ring-1 ring-black/5 rounded-sm px-5 py-6 sm:px-8 sm:py-8 lg:px-10 lg:py-10 font-['Times_New_Roman',Times,serif] text-[14px] lg:text-[15px] leading-[1.55] lg:leading-[1.6] print:shadow-none print:ring-0 print:rounded-none print:px-0 print:py-0"
+        >
+          <header className="text-center">
+            <h1 className="text-[24px] sm:text-[26px] lg:text-[30px] font-bold uppercase tracking-wide font-[Arial,Helvetica,sans-serif] leading-tight">
+              {resumeConfig.name}
+            </h1>
+            <p className="mt-2 text-[16px] lg:text-[17px] font-[Arial,Helvetica,sans-serif]">{resumeConfig.title}</p>
+            <p className="mt-3 flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-2 text-[13px] sm:text-[14px] lg:text-[15px]">
+              {resumeConfig.contacts.map((c) => (
+                <span key={c.value} className="inline-flex items-center gap-2 leading-none">
+                  {icons[c.icon as keyof typeof icons]}
+                  {c.href ? (
+                    <a href={c.href} className="hover:underline">
+                      {c.value}
+                    </a>
+                  ) : (
+                    c.value
+                  )}
+                </span>
+              ))}
+              <span className="inline-flex items-center gap-2 leading-none">
+                {icons.globe}
+                <a href={siteConfig.siteUrl} className="hover:underline">
+                  {siteConfig.siteUrl.replace(/^https?:\/\//, "")}
+                </a>
+              </span>
+            </p>
+          </header>
+
+          <Section title={t.summary}>
+            <p>
+              {resumeConfig.summary}{" "}
+              {locale === "vi" ? "Tìm hiểu thêm về tôi và các dự án đã thực hiện qua " : "Learn more about me and my work on my "}
+              <a href={siteConfig.siteUrl} className="underline underline-offset-2">
+                portfolio
+              </a>
+              .
+            </p>
+          </Section>
+
+          <Section title={t.experience}>
+            <div className="divide-y divide-black/10 [&>*]:py-3 lg:[&>*]:py-4 [&>*:first-child]:pt-0 [&>*:last-child]:pb-0">
+              {resumeConfig.work.map((w) => (
+                <Entry
+                  key={w.company}
+                  title={w.company}
+                  period={[w.period, w.location].filter(Boolean).join(" · ")}
+                  role={w.stack ? `${w.role} — ${w.stack}` : w.role}
+                  summary={w.summary}
+                  items={w.responsibilities}
+                >
+                </Entry>
+              ))}
+            </div>
+          </Section>
+
+          <Section title={t.skills}>
+            <dl className="grid grid-cols-[minmax(0,9.5rem)_1fr] gap-x-4 gap-y-1">
+              {resumeConfig.skills.map((s) => (
+                <div key={s.group} className="contents">
+                  <dt className="font-bold">{s.group}</dt>
+                  <dd>{s.items}</dd>
+                </div>
+              ))}
+            </dl>
+          </Section>
+
+          <Section title={t.education}>
+            {resumeConfig.education.map((e) => (
+              <div key={e.school} className="flex flex-wrap justify-between items-baseline gap-x-4">
+                <p>
+                  <b>{e.school}</b> — <i>{e.degree}</i>
+                </p>
+                <span className="text-[#1a1a1a] text-[13px] sm:text-[14px] lg:text-[15px]">{e.period}</span>
+              </div>
+            ))}
+            <p className="mt-0.5">
+              <b>{t.languages}:</b> {resumeConfig.languages.join(", ")}
+            </p>
+          </Section>
+
+          <Section title={t.links}>
+            <ul className="space-y-1">
+              {resumeConfig.links.map((l) => (
+                <li key={l.href} className="flex items-center gap-2">
+                  {icons[l.icon as keyof typeof icons]}
+                  <b>{l.label}:</b>
+                  <a href={l.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+                    {l.value}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        </div>
+      </main>
+    </div>
+  );
+}
