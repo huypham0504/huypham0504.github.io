@@ -43,6 +43,15 @@ const en = {
   nav: { projects: "Projects", experience: "Experience", services: "Services", blog: "Blog", tools: "Tools", wordpress: "WordPress", contact: "Contact" },
   hero: {
     bio: "Hi there 👋 I'm Huy, a Finance & Banking Law graduate with internship experience at the People's Court of Tan Binh District and the Saigon – Thu Duc Bailiff Office. I'm looking for a Legal Assistant role where I can keep sharpening my legal research, drafting and case-file skills. My long-term goal is to become a litigation lawyer who helps individuals and businesses resolve legal matters effectively.",
+    strengths: [
+      { label: "Litigation", value: "Judgments, decisions, hearing minutes, summonses" },
+      { label: "Bailiff work", value: "Official records, serving documents, police checks" },
+      { label: "Case files", value: "Organising and archiving court and bailiff files" },
+      { label: "Research", value: "Copyright protection for AI-generated works" },
+      { label: "Major", value: "Finance & Banking Law (UEL)" },
+      { label: "English", value: "TOEIC Listening & Reading, Speaking & Writing" },
+      { label: "Work style", value: "Careful, responsible, open to business travel" },
+    ],
     contact: "Contact",
     resume: "Resume",
     switchLabel: "Tiếng Việt",
@@ -123,6 +132,15 @@ const vi: typeof en = {
   nav: { projects: "Dự án", experience: "Kinh nghiệm", services: "Dịch vụ", blog: "Blog", tools: "Công cụ", wordpress: "WordPress", contact: "Liên hệ" },
   hero: {
     bio: "Xin chào 👋 Tôi là Huy, cử nhân ngành Luật Tài chính – Ngân hàng, có kinh nghiệm thực tập tại Tòa án Nhân dân Quận Tân Bình và Văn phòng Thừa phát lại Sài Gòn – Thủ Đức. Tôi mong muốn làm việc ở vị trí Trợ lý luật sư để tiếp tục rèn luyện kỹ năng nghiên cứu, soạn thảo và xử lý hồ sơ pháp lý, hướng tới trở thành luật sư tố tụng có nền tảng chuyên môn vững vàng.",
+    strengths: [
+      { label: "Tố tụng", value: "Soạn bản án, quyết định, biên bản, giấy triệu tập" },
+      { label: "Thừa phát lại", value: "Lập vi bằng, tống đạt, xác minh qua công an" },
+      { label: "Hồ sơ", value: "Sắp xếp, lưu trữ hồ sơ vụ án và vi bằng" },
+      { label: "Nghiên cứu", value: "Quyền tác giả đối với sản phẩm do AI tạo ra" },
+      { label: "Chuyên ngành", value: "Luật Tài chính – Ngân hàng (UEL)" },
+      { label: "Ngoại ngữ", value: "TOEIC Listening & Reading, Speaking & Writing" },
+      { label: "Tác phong", value: "Cẩn thận, trách nhiệm, sẵn sàng đi công tác tỉnh" },
+    ],
     contact: "Liên hệ",
     resume: "Xem CV",
     switchLabel: "English",

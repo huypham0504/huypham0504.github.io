@@ -38,13 +38,18 @@ export default function Hero({ locale = "en" }: { locale?: Locale }) {
         <span className="sr-only">bio</span>
       </p>
       <Socials locale={locale} />
-      {/* A few numbers counted from the site's own content, so they stay current */}
+      {/* Strengths (src/i18n → hero.strengths), then counts from the site's own content (hidden while 0) */}
       <div className="flex flex-col text-sm space-y-2 max-w-2xl text-foreground/85 mt-4 mb-2 lg:mb-4">
+        {t.hero.strengths.map((s) => (
+          <p key={s.label}>
+            <span className="font-semibold text-primary/90">{s.label}:</span> {s.value}
+          </p>
+        ))}
         {[
           { value: projects.filter((p) => p.lang === locale).length, label: locale === "vi" ? "Dự án" : "Projects", href: "/" },
           { value: toolsConfig.filter((x) => (x.kind ?? "app") === "app").length, label: locale === "vi" ? "Công cụ" : "Tools", href: "/tools" },
           { value: blogs.filter((b) => b.published && b.lang === locale).length, label: "Blog", href: "/blog" },
-        ].map((stat) => (
+        ].filter((stat) => stat.value > 0).map((stat) => (
           <p key={stat.label}>
             <span className="font-semibold text-primary/90">{stat.label}:</span>{" "}
             <Link href={localePath(locale, stat.href)} className="hover:text-primary hover:underline">{stat.value}</Link>
