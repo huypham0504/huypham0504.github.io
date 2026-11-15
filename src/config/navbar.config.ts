@@ -22,10 +22,6 @@ export const navbarConfig: NavItem[] = [
     url: "/tools",
   },
   {
-    title: "WordPress",
-    url: "/wordpress",
-  },
-  {
     title: "Contact",
     url: "/contact",
   },

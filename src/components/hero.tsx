@@ -43,7 +43,6 @@ export default function Hero({ locale = "en" }: { locale?: Locale }) {
         {[
           { value: projects.filter((p) => p.lang === locale).length, label: locale === "vi" ? "Dự án" : "Projects", href: "/" },
           { value: toolsConfig.filter((x) => (x.kind ?? "app") === "app").length, label: locale === "vi" ? "Công cụ" : "Tools", href: "/tools" },
-          { value: toolsConfig.filter((x) => x.kind === "wp" || x.kind === "private").length, label: "WordPress Kit", href: "/wordpress" },
           { value: blogs.filter((b) => b.published && b.lang === locale).length, label: "Blog", href: "/blog" },
         ].map((stat) => (
           <p key={stat.label}>
