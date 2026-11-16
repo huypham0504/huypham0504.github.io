@@ -143,6 +143,18 @@ export default function ResumeView({ locale = "en" }: { locale?: Locale }) {
             </p>
           </Section>
 
+          {resumeConfig.strengths.length > 0 && (
+            <Section title={t.strengths}>
+              <ul className="list-disc pl-5 space-y-1">
+                {resumeConfig.strengths.map((s) => (
+                  <li key={s.label}>
+                    <b>{s.label}:</b> {s.value}
+                  </li>
+                ))}
+              </ul>
+            </Section>
+          )}
+
           <Section title={t.experience}>
             <div className="divide-y divide-black/10 [&>*]:py-3 lg:[&>*]:py-4 [&>*:first-child]:pt-0 [&>*:last-child]:pb-0">
               {resumeConfig.work.map((w) => (
@@ -184,7 +196,7 @@ export default function ResumeView({ locale = "en" }: { locale?: Locale }) {
             </p>
           </Section>
 
-          <Section title={t.links}>
+          {resumeConfig.links.length > 0 && <Section title={t.links}>
             <ul className="space-y-1">
               {resumeConfig.links.map((l) => (
                 <li key={l.href} className="flex items-center gap-2">
@@ -196,7 +208,7 @@ export default function ResumeView({ locale = "en" }: { locale?: Locale }) {
                 </li>
               ))}
             </ul>
-          </Section>
+          </Section>}
         </div>
       </main>
     </div>

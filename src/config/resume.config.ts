@@ -4,6 +4,8 @@ export const resumeConfig = {
   title: "Legal Assistant",
   summary:
     "Finance & Banking Law graduate with internship experience at a People's Court and a Bailiff Office. I'm looking for a Legal Assistant role in a professional legal environment to keep learning and sharpen my skills in legal research, drafting and case-file handling. Over the next 3 years I aim to build hands-on experience; within 5 years I aim to become a litigation lawyer able to advise on and resolve legal matters for individuals and businesses.",
+  // Optional "Key strengths" list under the summary (empty = hidden)
+  strengths: [] as { label: string; value: string }[],
   contacts: [
     { icon: "address", value: "Thu Duc City, Ho Chi Minh City" },
     { icon: "phone", value: "0355 007 407", href: "tel:+84355007407" },
@@ -14,6 +16,34 @@ export const resumeConfig = {
     { icon: "github", label: "GitHub", value: "github.com/huypham0504", href: "https://github.com/huypham0504" },
   ],
   work: [
+    {
+      company: "Quang Minh Tue Law Firm LLC",
+      role: "Legal Assistant",
+      stack: "",
+      period: "Jun 2025 – Nov 2026",
+      location: "Ho Chi Minh City",
+      summary: "",
+      responsibilities: [
+        "Drafted and reviewed contracts and other legal documents for clients.",
+        "Helped lawyers draft statements of claim and prepare case files and evidence for court.",
+        "Took part in litigation as a legal assistant, mainly in civil cases.",
+      ],
+      selected: [] as string[],
+    },
+    {
+      company: "Hoan Cau Viet Nam Group Asset Management and Liquidation Partnership",
+      role: "Assistant to Insolvency Administrator",
+      stack: "",
+      period: "Jun 2025 – Nov 2026",
+      location: "Ho Chi Minh City",
+      summary: "",
+      responsibilities: [
+        "Supported and advised on business rehabilitation and bankruptcy procedures.",
+        "Helped the insolvency administrator prepare and run creditors' meetings; worked directly with creditors.",
+        "Notable cases: bankruptcy of Do Gia Seafood Import-Export Co., Diamond Star Consulting Services JSC, Duong Minh Chau Company…",
+      ],
+      selected: [] as string[],
+    },
     {
       company: "Saigon – Thu Duc Bailiff Office",
       role: "Intern",

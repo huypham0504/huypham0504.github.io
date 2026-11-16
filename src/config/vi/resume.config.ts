@@ -6,6 +6,7 @@ export const resumeConfigVi: typeof resumeConfig = {
   title: "Trợ lý Luật sư",
   summary:
     "Cử nhân ngành Luật Tài chính – Ngân hàng, có kinh nghiệm thực tập tại Tòa án và Văn phòng Thừa phát lại. Tôi mong muốn được làm việc trong môi trường pháp lý chuyên nghiệp với vị trí Trợ lý luật sư để tiếp tục học hỏi, rèn luyện kỹ năng nghiên cứu, soạn thảo và xử lý hồ sơ pháp lý. Trong 3 năm tới, tôi đặt mục tiêu tích lũy kinh nghiệm thực tiễn và nâng cao năng lực chuyên môn; về dài hạn 5 năm, tôi hướng đến trở thành luật sư có nền tảng vững vàng trong lĩnh vực tố tụng, có khả năng tư vấn và giải quyết hiệu quả các vấn đề pháp lý cho cá nhân và doanh nghiệp.",
+  strengths: [],
   contacts: [
     { icon: "address", value: "TP. Thủ Đức, TP. Hồ Chí Minh" },
     { icon: "phone", value: "0355 007 407", href: "tel:+84355007407" },
@@ -13,6 +14,34 @@ export const resumeConfigVi: typeof resumeConfig = {
   ],
   links: resumeConfig.links,
   work: [
+    {
+      company: "Công ty Luật TNHH Quang Minh Tuệ",
+      role: "Trợ lý Luật sư",
+      stack: "",
+      period: "06/2025 – 11/2026",
+      location: "TP. Hồ Chí Minh",
+      summary: "",
+      responsibilities: [
+        "Soạn thảo, rà soát hợp đồng và các văn bản pháp lý theo yêu cầu của khách hàng.",
+        "Hỗ trợ luật sư soạn đơn khởi kiện, chuẩn bị hồ sơ và tài liệu, chứng cứ nộp Tòa án.",
+        "Tham gia tố tụng với vai trò trợ lý luật sư, chủ yếu trong các vụ việc dân sự.",
+      ],
+      selected: [] as string[],
+    },
+    {
+      company: "Công ty Hợp danh Quản lý và Thanh lý Tài sản Tập đoàn Hoàn Cầu Việt Nam",
+      role: "Trợ lý Quản tài viên",
+      stack: "",
+      period: "06/2025 – 11/2026",
+      location: "TP. Hồ Chí Minh",
+      summary: "",
+      responsibilities: [
+        "Tham gia hỗ trợ, tư vấn thủ tục phục hồi, phá sản doanh nghiệp; nắm vững quy trình, thủ tục phá sản.",
+        "Hỗ trợ Quản tài viên chuẩn bị và điều hành Hội nghị chủ nợ; làm việc trực tiếp với các chủ nợ.",
+        "Vụ việc tiêu biểu: phá sản Công ty TNHH XNK Hải sản Đỗ Gia, Công ty CP Dịch vụ Tư vấn Diamond Star, Công ty Dương Minh Châu…",
+      ],
+      selected: [] as string[],
+    },
     {
       company: "Văn phòng Thừa phát lại Sài Gòn – Thủ Đức",
       role: "Thực tập sinh",
