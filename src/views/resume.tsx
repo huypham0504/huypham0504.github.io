@@ -171,7 +171,7 @@ export default function ResumeView({ locale = "en" }: { locale?: Locale }) {
             </div>
           </Section>
 
-          <Section title={t.skills}>
+          {resumeConfig.skills.length > 0 && <Section title={t.skills}>
             <dl className="grid grid-cols-[minmax(0,9.5rem)_1fr] gap-x-4 gap-y-1">
               {resumeConfig.skills.map((s) => (
                 <div key={s.group} className="contents">
@@ -180,7 +180,7 @@ export default function ResumeView({ locale = "en" }: { locale?: Locale }) {
                 </div>
               ))}
             </dl>
-          </Section>
+          </Section>}
 
           <Section title={t.education}>
             {resumeConfig.education.map((e) => (
