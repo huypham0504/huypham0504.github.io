@@ -8,6 +8,30 @@ export type OfficeSkill = {
 
 export const officeSkillsConfig: OfficeSkill[] = [
   {
+    title: { vi: "ChatGPT", en: "ChatGPT" },
+    level: { vi: "Sử dụng tốt", en: "Proficient" },
+    description: {
+      vi: "Dùng AI để tăng tốc nghiên cứu và soạn thảo, luôn đối chiếu lại với văn bản pháp luật gốc.",
+      en: "Using AI to speed up research and drafting, always checked against the original legal sources.",
+    },
+    includes: {
+      vi: [
+        "Tóm tắt nhanh hồ sơ, bản án, tài liệu dài; lập dàn ý vụ việc",
+        "Gợi ý bố cục, câu chữ cho hợp đồng, đơn từ, email gửi khách hàng",
+        "Hỗ trợ dịch và đọc hiểu tài liệu, hợp đồng tiếng Anh",
+        "Viết prompt rõ ràng, kiểm chứng điều luật, số hiệu văn bản trước khi sử dụng",
+        "Ẩn danh thông tin khách hàng, bảo mật hồ sơ khi làm việc với AI",
+      ],
+      en: [
+        "Quickly summarising case files, judgments and long documents; outlining matters",
+        "Suggesting structure and wording for contracts, pleadings and client emails",
+        "Helping translate and understand English documents and contracts",
+        "Writing clear prompts and verifying articles and document numbers before use",
+        "Anonymising client data and keeping files confidential when using AI",
+      ],
+    },
+  },
+  {
     title: { vi: "Microsoft Word", en: "Microsoft Word" },
     level: { vi: "Thành thạo", en: "Advanced" },
     description: {
@@ -96,30 +120,6 @@ export const officeSkillsConfig: OfficeSkill[] = [
         "The courts' public judgment portal",
         "The national business registration portal for company checks",
         "Summarising findings into tables and memos for lawyers",
-      ],
-    },
-  },
-  {
-    title: { vi: "ChatGPT", en: "ChatGPT" },
-    level: { vi: "Sử dụng tốt", en: "Proficient" },
-    description: {
-      vi: "Dùng AI để tăng tốc nghiên cứu và soạn thảo, luôn đối chiếu lại với văn bản pháp luật gốc.",
-      en: "Using AI to speed up research and drafting, always checked against the original legal sources.",
-    },
-    includes: {
-      vi: [
-        "Tóm tắt nhanh hồ sơ, bản án, tài liệu dài; lập dàn ý vụ việc",
-        "Gợi ý bố cục, câu chữ cho hợp đồng, đơn từ, email gửi khách hàng",
-        "Hỗ trợ dịch và đọc hiểu tài liệu, hợp đồng tiếng Anh",
-        "Viết prompt rõ ràng, kiểm chứng điều luật, số hiệu văn bản trước khi sử dụng",
-        "Ẩn danh thông tin khách hàng, bảo mật hồ sơ khi làm việc với AI",
-      ],
-      en: [
-        "Quickly summarising case files, judgments and long documents; outlining matters",
-        "Suggesting structure and wording for contracts, pleadings and client emails",
-        "Helping translate and understand English documents and contracts",
-        "Writing clear prompts and verifying articles and document numbers before use",
-        "Anonymising client data and keeping files confidential when using AI",
       ],
     },
   },
