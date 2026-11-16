@@ -86,12 +86,12 @@ export const resumeConfigVi: typeof resumeConfig = {
   skills: [
     { group: "Chuyên môn", items: "Xử lý & lưu trữ hồ sơ, soạn thảo văn bản tố tụng, soạn thảo vi bằng, nghiên cứu pháp lý" },
     { group: "Kỹ năng mềm", items: "Tư duy phản biện, tổng hợp logic, tìm kiếm & tổng hợp thông tin nhanh, làm việc độc lập & theo nhóm" },
-    { group: "Chứng chỉ", items: "TOEIC Listening & Reading (09/2025), TOEIC Speaking & Writing (01/2026)" },
+    { group: "Chứng chỉ", items: "TOEIC Listening & Reading 545/990 (09/2025); TOEIC Speaking 110/200 & Writing 150/200 (12/2025)" },
     { group: "Khác", items: "Tin học văn phòng cơ bản; cẩn thận, trách nhiệm; chấp nhận đi công tác tỉnh" },
   ],
   education: [
     { school: "Trường Đại học Kinh tế – Luật, ĐHQG TP.HCM", degree: "Cử nhân Luật Tài chính – Ngân hàng (GPA 7.05/10, Khá)", period: "2021 – 2025" },
     { school: "Trường THPT Nguyễn Hữu Huân", degree: "Xếp loại Giỏi", period: "2017 – 2020" },
   ],
-  languages: ["Tiếng Anh (giao tiếp cơ bản)"],
+  languages: ["Tiếng Anh (trung cấp): đọc hiểu tài liệu, hợp đồng; viết email công việc"],
 };

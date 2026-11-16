@@ -88,12 +88,12 @@ export const resumeConfig = {
   skills: [
     { group: "Legal work", items: "Case-file handling, procedural drafting, official records (vi bằng), legal research" },
     { group: "Soft skills", items: "Critical thinking, logical synthesis, fast information research, independent & team work" },
-    { group: "Certificates", items: "TOEIC Listening & Reading (09/2025), TOEIC Speaking & Writing (01/2026)" },
+    { group: "Certificates", items: "TOEIC Listening & Reading 545/990 (09/2025); TOEIC Speaking 110/200 & Writing 150/200 (12/2025)" },
     { group: "Other", items: "Basic office software; open to business travel" },
   ],
   education: [
     { school: "University of Economics and Law – VNU-HCM", degree: "Bachelor of Laws, Finance & Banking Law (GPA 7.05/10)", period: "2021 – 2025" },
     { school: "Nguyen Huu Huan High School", degree: "Excellent", period: "2017 – 2020" },
   ],
-  languages: ["English (basic communication)"],
+  languages: ["English (intermediate): reads legal documents and contracts, writes work emails"],
 };

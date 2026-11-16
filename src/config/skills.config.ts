@@ -9,7 +9,7 @@ export const skillsConfig = [
   },
   {
     category: "Languages",
-    technologies: ["English (TOEIC L&R, S&W)"],
+    technologies: ["English (TOEIC L&R 545, S&W 260)"],
   },
   {
     category: "Tools",
