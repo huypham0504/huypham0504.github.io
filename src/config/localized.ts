@@ -22,7 +22,7 @@ const skillItemVi: Record<string, string> = {
   "Logical synthesis": "Tổng hợp logic",
   "Fast information research": "Tìm kiếm & tổng hợp thông tin nhanh",
   "Independent & team work": "Làm việc độc lập & theo nhóm",
-  "English (TOEIC L&R, S&W)": "Tiếng Anh (TOEIC L&R, S&W)",
+  "English (TOEIC L&R 545, S&W 260)": "Tiếng Anh (TOEIC L&R 545, S&W 260)",
   "Basic office software": "Tin học văn phòng cơ bản",
 };
 
