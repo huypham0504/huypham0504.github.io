@@ -49,7 +49,7 @@ export const getSiteText = (locale: Locale) =>
     ? {
         title: "HuyPham | Trợ lý Luật sư",
         description:
-          "Phạm Quốc Huy — Cử nhân Luật Tài chính – Ngân hàng (Trường ĐH Kinh tế – Luật, ĐHQG TP.HCM), có kinh nghiệm thực tập tại Tòa án Nhân dân Quận Tân Bình và Văn phòng Thừa phát lại Sài Gòn – Thủ Đức, ứng tuyển vị trí Trợ lý luật sư.",
+          "Phạm Quốc Huy — Trợ lý Luật sư với gần 1,5 năm kinh nghiệm tại Công ty Luật TNHH Quang Minh Tuệ và các vụ việc phá sản doanh nghiệp; soạn thảo hợp đồng, đơn khởi kiện, hồ sơ tố tụng dân sự. Cử nhân Luật Tài chính – Ngân hàng (Trường ĐH Kinh tế – Luật, ĐHQG TP.HCM).",
       }
     : { title: siteConfig.title, description: siteConfig.description };
 

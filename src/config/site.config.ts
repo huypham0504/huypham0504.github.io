@@ -3,7 +3,7 @@ import { SiteConfig } from "@/types";
 export const siteConfig: SiteConfig = {
   name: "HuyPham",
   title: "HuyPham | Legal Assistant",
-  description: "Pham Quoc Huy — Finance & Banking Law graduate (University of Economics and Law, VNU-HCM) with internship experience at the People's Court of Tan Binh District and the Saigon – Thu Duc Bailiff Office, seeking a Legal Assistant role.",
+  description: "Pham Quoc Huy — Legal Assistant with nearly 1.5 years at Quang Minh Tue Law Firm and on corporate bankruptcy cases; contracts, statements of claim and civil litigation. Finance & Banking Law graduate (University of Economics and Law, VNU-HCM).",
   origin: "https://huypham0504.github.io",
   keywords: [
     "Pham Quoc Huy",

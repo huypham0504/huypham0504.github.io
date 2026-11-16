@@ -3,7 +3,7 @@ export const resumeConfig = {
   name: "Pham Quoc Huy",
   title: "Legal Assistant",
   summary:
-    "Finance & Banking Law graduate with internship experience at a People's Court and a Bailiff Office. I'm looking for a Legal Assistant role in a professional legal environment to keep learning and sharpen my skills in legal research, drafting and case-file handling. Over the next 3 years I aim to build hands-on experience; within 5 years I aim to become a litigation lawyer able to advise on and resolve legal matters for individuals and businesses.",
+    "Finance & Banking Law graduate (UEL) with nearly 1.5 years as a Legal Assistant at Quang Minh Tue Law Firm and as an Assistant to an Insolvency Administrator on corporate bankruptcy cases. Skilled at drafting and reviewing contracts and statements of claim and preparing civil litigation files, with internship grounding at a People's Court and a Bailiff Office. Within 5 years I aim to become a litigation lawyer able to advise on and resolve legal matters for individuals and businesses.",
   // Optional "Key strengths" list under the summary (empty = hidden)
   strengths: [] as { label: string; value: string }[],
   contacts: [
