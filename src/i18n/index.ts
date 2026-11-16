@@ -98,7 +98,7 @@ const en = {
   },
   tools: {
     title: "Tools",
-    description: "Office and legal-research tools: advanced Word and Excel, PDF handling and Google Workspace.",
+    description: "Office and legal-research tools: advanced Word and Excel, PDF handling, Google Workspace and ChatGPT.",
     empty: "Content is on its way — check back soon.",
     done: "Live",
     guide: "Docs",
@@ -189,7 +189,7 @@ const vi: typeof en = {
   },
   tools: {
     title: "Công cụ",
-    description: "Kỹ năng tin học văn phòng và công cụ tra cứu pháp lý: thành thạo Word, Excel, xử lý PDF và Google Workspace.",
+    description: "Kỹ năng tin học văn phòng và công cụ tra cứu pháp lý: thành thạo Word, Excel, xử lý PDF, Google Workspace và ChatGPT.",
     empty: "Nội dung đang được cập nhật — bạn quay lại sau nhé.",
     done: "Live",
     guide: "Docs",
