@@ -46,3 +46,5 @@ public/static/
 # qwen & python cache
 .qwen/
 __pycache__/
+# local CV exports
+cv-export/

@@ -5,6 +5,7 @@ import { resumeConfig } from "@/config/resume.config";
 import { skillsConfig } from "@/config/skills.config";
 import { experiencesConfigVi } from "@/config/vi/experience.config";
 import { resumeConfigVi } from "@/config/vi/resume.config";
+import { resumeVariantsVi } from "@/config/vi/resume.variants";
 
 const skillCategoryVi: Record<string, string> = {
   "Legal Work": "Chuyên môn pháp lý",
@@ -23,7 +24,8 @@ const skillItemVi: Record<string, string> = {
   "Fast information research": "Tìm kiếm & tổng hợp thông tin nhanh",
   "Independent & team work": "Làm việc độc lập & theo nhóm",
   "English (TOEIC L&R 545, S&W 260)": "Tiếng Anh (TOEIC L&R 545, S&W 260)",
-  "Basic office software": "Tin học văn phòng cơ bản",
+  "Advanced Word & Excel": "Thành thạo Word, Excel",
+  "PDF tools & Google Workspace": "Xử lý PDF & Google Workspace",
 };
 
 export const getSkills = (locale: Locale) =>
@@ -37,7 +39,10 @@ export const getSkills = (locale: Locale) =>
 export const getExperiences = (locale: Locale) =>
   locale === "vi" ? experiencesConfigVi : experiencesConfig;
 
-export const getResume = (locale: Locale) => (locale === "vi" ? resumeConfigVi : resumeConfig);
+// CV_VARIANT (build-time, PDF export only) swaps in a job-targeted Vietnamese CV
+const variant = process.env.CV_VARIANT ? resumeVariantsVi[process.env.CV_VARIANT] : undefined;
+
+export const getResume = (locale: Locale) => (locale === "vi" ? variant ?? resumeConfigVi : resumeConfig);
 
 export const getSiteText = (locale: Locale) =>
   locale === "vi"

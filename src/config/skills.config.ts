@@ -13,6 +13,6 @@ export const skillsConfig = [
   },
   {
     category: "Tools",
-    technologies: ["Basic office software"],
+    technologies: ["Advanced Word & Excel", "PDF tools & Google Workspace"],
   },
 ];

@@ -97,7 +97,7 @@ const en = {
   },
   tools: {
     title: "Tools",
-    description: "Useful tools and resources for legal work.",
+    description: "Office and legal-research tools: advanced Word and Excel, PDF handling and Google Workspace.",
     empty: "Content is on its way — check back soon.",
     done: "Live",
     guide: "Docs",
@@ -187,7 +187,7 @@ const vi: typeof en = {
   },
   tools: {
     title: "Công cụ",
-    description: "Công cụ và tài liệu hữu ích cho công việc pháp lý.",
+    description: "Kỹ năng tin học văn phòng và công cụ tra cứu pháp lý: thành thạo Word, Excel, xử lý PDF và Google Workspace.",
     empty: "Nội dung đang được cập nhật — bạn quay lại sau nhé.",
     done: "Live",
     guide: "Docs",
