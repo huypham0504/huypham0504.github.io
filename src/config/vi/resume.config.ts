@@ -36,9 +36,10 @@ export const resumeConfigVi: typeof resumeConfig = {
       location: "TP. Hồ Chí Minh",
       summary: "",
       responsibilities: [
-        "Tham gia hỗ trợ, tư vấn thủ tục phục hồi, phá sản doanh nghiệp; nắm vững quy trình, thủ tục phá sản.",
-        "Hỗ trợ Quản tài viên chuẩn bị và điều hành Hội nghị chủ nợ; làm việc trực tiếp với các chủ nợ.",
-        "Vụ việc tiêu biểu: phá sản Công ty TNHH XNK Hải sản Đỗ Gia, Công ty CP Dịch vụ Tư vấn Diamond Star, Công ty Dương Minh Châu…",
+        "Tham gia hỗ trợ, tư vấn thủ tục phục hồi, phá sản doanh nghiệp; nắm vững quy trình, thủ tục theo Luật Phục hồi, phá sản 2025.",
+        "Tiếp nhận giấy đòi nợ, đối chiếu chứng cứ, hỗ trợ xác minh khoản nợ và lập danh sách chủ nợ, người mắc nợ.",
+        "Hỗ trợ Quản tài viên kiểm kê tài sản, chuẩn bị và điều hành Hội nghị chủ nợ; làm việc trực tiếp với các chủ nợ.",
+        "Vụ việc tiêu biểu: phá sản Công ty TNHH XNK Hải sản Đỗ Gia (QĐ số 31/2026/QĐST-PS), Công ty CP Dịch vụ Tư vấn Diamond Star (QĐ số 21/2026/QĐST-PS), Công ty TNHH Tinh bột sắn Dương Minh Châu (QĐ số 02/2024/QĐ-MTTPS).",
       ],
       selected: [] as string[],
     },
@@ -84,7 +85,7 @@ export const resumeConfigVi: typeof resumeConfig = {
     },
   ],
   skills: [
-    { group: "Chuyên môn", items: "Xử lý & lưu trữ hồ sơ, soạn thảo văn bản tố tụng, soạn thảo vi bằng, nghiên cứu pháp lý" },
+    { group: "Chuyên môn", items: "Thủ tục phục hồi, phá sản; soạn thảo, rà soát hợp đồng; soạn đơn khởi kiện, văn bản tố tụng; soạn thảo vi bằng; xử lý & lưu trữ hồ sơ; nghiên cứu pháp lý" },
     { group: "Kỹ năng mềm", items: "Tư duy phản biện, tổng hợp logic, tìm kiếm & tổng hợp thông tin nhanh, làm việc độc lập & theo nhóm" },
     { group: "Chứng chỉ", items: "TOEIC Listening & Reading 545/990 (09/2025); TOEIC Speaking 110/200 & Writing 150/200 (12/2025)" },
     { group: "Khác", items: "Thành thạo Word, Excel; sử dụng tốt công cụ PDF, Google Workspace; cẩn thận, trách nhiệm; chấp nhận đi công tác tỉnh" },

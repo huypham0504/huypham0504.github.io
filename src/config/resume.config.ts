@@ -14,6 +14,7 @@ export const resumeConfig = {
   links: [
     { icon: "globe", label: "Facebook", value: "facebook.com/huy.pham.901300", href: "https://www.facebook.com/huy.pham.901300/" },
     { icon: "github", label: "GitHub", value: "github.com/huypham0504", href: "https://github.com/huypham0504" },
+    { icon: "globe", label: "Blog", value: "huypham0504.github.io/blog", href: "https://huypham0504.github.io/blog" },
   ],
   work: [
     {
@@ -38,9 +39,10 @@ export const resumeConfig = {
       location: "Ho Chi Minh City",
       summary: "",
       responsibilities: [
-        "Supported and advised on business rehabilitation and bankruptcy procedures.",
-        "Helped the insolvency administrator prepare and run creditors' meetings; worked directly with creditors.",
-        "Notable cases: bankruptcy of Do Gia Seafood Import-Export Co., Diamond Star Consulting Services JSC, Duong Minh Chau Company…",
+        "Supported and advised on business restructuring and bankruptcy procedures under the 2025 Law on Restructuring and Bankruptcy.",
+        "Received creditors' claims, checked evidence, helped verify debts and prepared lists of creditors and debtors.",
+        "Helped the insolvency administrator take inventory of assets and prepare and run creditors' meetings; worked directly with creditors.",
+        "Notable cases: bankruptcy of Do Gia Seafood Import-Export Co., Ltd. (Decision No. 31/2026/QĐST-PS), Diamond Star Consulting Services JSC (No. 21/2026/QĐST-PS), Duong Minh Chau Cassava Starch Co., Ltd. (No. 02/2024/QĐ-MTTPS).",
       ],
       selected: [] as string[],
     },
@@ -86,7 +88,7 @@ export const resumeConfig = {
     },
   ],
   skills: [
-    { group: "Legal work", items: "Case-file handling, procedural drafting, official records (vi bằng), legal research" },
+    { group: "Legal work", items: "Restructuring and bankruptcy procedure; drafting and reviewing contracts; statements of claim and procedural drafting; official records (vi bằng); case-file handling; legal research" },
     { group: "Soft skills", items: "Critical thinking, logical synthesis, fast information research, independent & team work" },
     { group: "Certificates", items: "TOEIC Listening & Reading 545/990 (09/2025); TOEIC Speaking 110/200 & Writing 150/200 (12/2025)" },
     { group: "Other", items: "Advanced Word & Excel; PDF tools and Google Workspace; open to business travel" },
