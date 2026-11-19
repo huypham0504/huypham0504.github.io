@@ -103,4 +103,16 @@ export const servicesConfig: Service[] = [
     },
     tags: ["Lao động", "Tranh chấp"],
   },
+  {
+    title: { vi: "Tư vấn pháp lý cho doanh nghiệp", en: "Legal advice for businesses" },
+    description: {
+      vi: "Hỗ trợ doanh nghiệp về hợp đồng, thu hồi công nợ và thủ tục phục hồi, phá sản.",
+      en: "Supporting businesses with contracts, debt recovery and restructuring or bankruptcy procedures.",
+    },
+    includes: {
+      vi: ["Soạn thảo, rà soát hợp đồng thương mại", "Thu hồi công nợ: thư đòi nợ, khởi kiện, yêu cầu phá sản", "Tư vấn thủ tục phục hồi, phá sản và gửi giấy đòi nợ"],
+      en: ["Drafting and reviewing commercial contracts", "Debt recovery: demand letters, lawsuits, bankruptcy petitions", "Advice on restructuring, bankruptcy and filing claims"],
+    },
+    tags: ["Doanh nghiệp", "Hợp đồng", "Phá sản"],
+  },
 ];
