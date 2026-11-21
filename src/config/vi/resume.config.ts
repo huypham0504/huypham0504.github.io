@@ -91,6 +91,7 @@ export const resumeConfigVi: typeof resumeConfig = {
     { group: "Khác", items: "Thành thạo Word, Excel; sử dụng tốt công cụ PDF, Google Workspace; cẩn thận, trách nhiệm; chấp nhận đi công tác tỉnh" },
   ],
   education: [
+    { school: "Học viện Tư pháp – Cơ sở TP. Hồ Chí Minh", degree: "Chương trình đào tạo nghề Luật sư (đang theo học)", period: "2026 – nay" },
     { school: "Trường Đại học Kinh tế – Luật, ĐHQG TP.HCM", degree: "Cử nhân Luật Tài chính – Ngân hàng (GPA 7.05/10, Khá)", period: "2021 – 2025" },
     { school: "Trường THPT Nguyễn Hữu Huân", degree: "Xếp loại Giỏi", period: "2017 – 2020" },
   ],

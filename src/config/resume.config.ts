@@ -94,6 +94,7 @@ export const resumeConfig = {
     { group: "Other", items: "Advanced Word & Excel; PDF tools and Google Workspace; open to business travel" },
   ],
   education: [
+    { school: "Judicial Academy – Ho Chi Minh City Campus", degree: "Lawyer Training Programme (in progress)", period: "2026 – present" },
     { school: "University of Economics and Law – VNU-HCM", degree: "Bachelor of Laws, Finance & Banking Law (GPA 7.05/10)", period: "2021 – 2025" },
     { school: "Nguyen Huu Huan High School", degree: "Excellent", period: "2017 – 2020" },
   ],
