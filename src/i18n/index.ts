@@ -42,7 +42,7 @@ export const ogLocale = (locale: Locale) => (locale === "vi" ? "vi_VN" : "en_US"
 const en = {
   nav: { projects: "Projects", experience: "Experience", services: "Legal Work", blog: "Blog", tools: "Tools", wordpress: "WordPress", contact: "Contact" },
   hero: {
-    bio: "I'm Huy, a legal assistant and Finance & Banking Law graduate. I adapted and maintain this open-source website with Next.js, TypeScript and MDX. I use it to share my experience supporting civil litigation and corporate bankruptcy cases, and to publish legal articles in Vietnamese and English.",
+    bio: "I'm Huy, a legal assistant and Finance & Banking Law graduate, now in the Lawyer Training Programme at the Judicial Academy. I adapted and maintain this open-source website with Next.js, TypeScript and MDX. I use it to share my experience supporting civil litigation and corporate bankruptcy cases, and to publish legal articles in Vietnamese and English.",
     projectLink: "About this web project",
     strengths: [
       { label: "Civil litigation", value: "Statements of claim, evidence, attending proceedings with lawyers" },
@@ -133,7 +133,7 @@ const en = {
 const vi: typeof en = {
   nav: { projects: "Dự án", experience: "Kinh nghiệm", services: "Nghiệp vụ", blog: "Blog", tools: "Công cụ", wordpress: "WordPress", contact: "Liên hệ" },
   hero: {
-    bio: "Tôi là Huy, Trợ lý Luật sư và cử nhân Luật Tài chính – Ngân hàng. Tôi tùy biến và duy trì website mã nguồn mở này bằng Next.js, TypeScript và MDX để chia sẻ kinh nghiệm hỗ trợ tố tụng dân sự, phá sản doanh nghiệp và đăng bài viết pháp lý bằng tiếng Việt và tiếng Anh.",
+    bio: "Tôi là Huy, Trợ lý Luật sư, cử nhân Luật Tài chính – Ngân hàng và đang theo học chương trình đào tạo nghề Luật sư tại Học viện Tư pháp. Tôi tùy biến và duy trì website mã nguồn mở này bằng Next.js, TypeScript và MDX để chia sẻ kinh nghiệm hỗ trợ tố tụng dân sự, phá sản doanh nghiệp và đăng bài viết pháp lý bằng tiếng Việt và tiếng Anh.",
     projectLink: "Xem dự án website này",
     strengths: [
       { label: "Tố tụng dân sự", value: "Soạn đơn khởi kiện, chuẩn bị chứng cứ, tham gia tố tụng cùng luật sư" },

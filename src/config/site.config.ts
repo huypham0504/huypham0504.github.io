@@ -3,7 +3,7 @@ import { SiteConfig } from "@/types";
 export const siteConfig: SiteConfig = {
   name: "HuyPham",
   title: "Pham Quoc Huy | Personal Portfolio",
-  description: "Personal portfolio of Pham Quoc Huy. An open-source bilingual website built with Next.js and MDX, documenting my web project, legal assistant experience and legal research.",
+  description: "Personal portfolio of Pham Quoc Huy. An open-source bilingual website built with Next.js and MDX, documenting my legal assistant experience, lawyer training at the Judicial Academy and legal research.",
   origin: "https://huypham0504.github.io",
   keywords: [
     "Pham Quoc Huy",

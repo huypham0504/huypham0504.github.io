@@ -5,7 +5,7 @@ export const resumeConfigVi: typeof resumeConfig = {
   name: "Phạm Quốc Huy",
   title: "Trợ lý Luật sư",
   summary:
-    "Cử nhân Luật Tài chính – Ngân hàng (UEL) với gần 1,5 năm kinh nghiệm làm Trợ lý Luật sư tại Công ty Luật TNHH Quang Minh Tuệ và Trợ lý Quản tài viên trong các vụ việc phá sản doanh nghiệp. Thành thạo soạn thảo, rà soát hợp đồng, đơn khởi kiện và chuẩn bị hồ sơ tố tụng dân sự; có nền tảng thực tập tại Tòa án và Văn phòng Thừa phát lại. Mục tiêu 5 năm: trở thành luật sư tố tụng, tư vấn và giải quyết hiệu quả các vấn đề pháp lý cho cá nhân và doanh nghiệp.",
+    "Cử nhân Luật Tài chính – Ngân hàng (UEL) với gần 1,5 năm kinh nghiệm làm Trợ lý Luật sư tại Công ty Luật TNHH Quang Minh Tuệ và Trợ lý Quản tài viên trong các vụ việc phá sản doanh nghiệp. Thành thạo soạn thảo, rà soát hợp đồng, đơn khởi kiện và chuẩn bị hồ sơ tố tụng dân sự; có nền tảng thực tập tại Tòa án và Văn phòng Thừa phát lại. Đang theo học chương trình đào tạo nghề Luật sư tại Học viện Tư pháp. Mục tiêu 5 năm: trở thành luật sư tố tụng, tư vấn và giải quyết hiệu quả các vấn đề pháp lý cho cá nhân và doanh nghiệp.",
   strengths: [],
   contacts: [
     { icon: "address", value: "TP. Thủ Đức, TP. Hồ Chí Minh" },

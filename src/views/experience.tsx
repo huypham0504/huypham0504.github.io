@@ -14,11 +14,17 @@ export default function ExperienceView({ locale = "en" }: { locale?: Locale }) {
       ))}
       <div className="py-7">
         <p className="text-xs font-medium uppercase tracking-wider text-foreground/75 mb-3">{t.experience.education}</p>
-        <div className="flex items-center justify-between flex-wrap gap-2">
-          <span className="font-semibold font-heading text-lg">{edu.school}</span>
-          <p className="text-sm text-foreground/85">{edu.period}</p>
+        <div className="space-y-5">
+          {edu.map((e) => (
+            <div key={e.school}>
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <span className="font-semibold font-heading text-lg">{e.school}</span>
+                <p className="text-sm text-foreground/85">{e.period}</p>
+              </div>
+              <p className="mt-1 text-[15px] font-medium text-foreground/90">{e.degree}</p>
+            </div>
+          ))}
         </div>
-        <p className="mt-1 text-[15px] font-medium text-foreground/90">{edu.degree}</p>
       </div>
     </div>
   );

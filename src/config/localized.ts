@@ -49,11 +49,17 @@ export const getSiteText = (locale: Locale) =>
     ? {
         title: "Phạm Quốc Huy | Portfolio cá nhân",
         description:
-          "Portfolio cá nhân của Phạm Quốc Huy, giới thiệu dự án website mã nguồn mở Việt–Anh dùng Next.js và MDX, kinh nghiệm Trợ lý Luật sư và các bài viết pháp lý.",
+          "Portfolio cá nhân của Phạm Quốc Huy, giới thiệu dự án website mã nguồn mở Việt–Anh dùng Next.js và MDX, kinh nghiệm Trợ lý Luật sư, quá trình học nghề Luật sư tại Học viện Tư pháp và các bài viết pháp lý.",
       }
     : { title: siteConfig.title, description: siteConfig.description };
 
 export const getEducation = (locale: Locale) =>
   locale === "vi"
-    ? { school: "Trường Đại học Kinh tế – Luật, ĐHQG TP.HCM", degree: "Cử nhân Luật Tài chính – Ngân hàng · GPA 7.05/10 · Khá", period: "2021 - 2025" }
-    : { school: "University of Economics and Law – VNU-HCM", degree: "Bachelor of Laws, Finance & Banking Law · GPA 7.05/10", period: "2021 - 2025" };
+    ? [
+        { school: "Học viện Tư pháp – Cơ sở TP. Hồ Chí Minh", degree: "Chương trình đào tạo nghề Luật sư · Đang theo học", period: "2026 - nay" },
+        { school: "Trường Đại học Kinh tế – Luật, ĐHQG TP.HCM", degree: "Cử nhân Luật Tài chính – Ngân hàng · GPA 7.05/10 · Khá", period: "2021 - 2025" },
+      ]
+    : [
+        { school: "Judicial Academy – Ho Chi Minh City Campus", degree: "Lawyer Training Programme · In progress", period: "2026 - present" },
+        { school: "University of Economics and Law – VNU-HCM", degree: "Bachelor of Laws, Finance & Banking Law · GPA 7.05/10", period: "2021 - 2025" },
+      ];
