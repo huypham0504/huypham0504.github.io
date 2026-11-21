@@ -40,9 +40,10 @@ export const languageAlternates = (path: string, locale: Locale) => {
 export const ogLocale = (locale: Locale) => (locale === "vi" ? "vi_VN" : "en_US");
 
 const en = {
-  nav: { projects: "Projects", experience: "Experience", services: "Services", blog: "Blog", tools: "Tools", wordpress: "WordPress", contact: "Contact" },
+  nav: { projects: "Projects", experience: "Experience", services: "Legal Work", blog: "Blog", tools: "Tools", wordpress: "WordPress", contact: "Contact" },
   hero: {
-    bio: "Hi there 👋 I'm Huy, a Finance & Banking Law graduate (UEL) with nearly 1.5 years of experience as a Legal Assistant at Quang Minh Tue Law Firm and as an Assistant to an Insolvency Administrator on corporate bankruptcy cases. I draft and review contracts and statements of claim, and prepare civil litigation files; before that I interned at the People's Court of Tan Binh District and the Saigon – Thu Duc Bailiff Office. My goal is to become a litigation lawyer with solid professional foundations.",
+    bio: "I'm Huy, a legal assistant and Finance & Banking Law graduate. I adapted and maintain this open-source website with Next.js, TypeScript and MDX. I use it to share my experience supporting civil litigation and corporate bankruptcy cases, and to publish legal articles in Vietnamese and English.",
+    projectLink: "About this web project",
     strengths: [
       { label: "Civil litigation", value: "Statements of claim, evidence, attending proceedings with lawyers" },
       { label: "Contracts", value: "Drafting and reviewing contracts and legal documents" },
@@ -84,10 +85,9 @@ const en = {
     locationValue: "Thu Duc City, Ho Chi Minh City, Vietnam",
   },
   services: {
-    title: "Services",
-    description: "How I can support a law firm as a Legal Assistant: case-file handling, legal drafting, research and procedural support.",
-    includes: "Includes",
-    cta: "Discuss your project",
+    title: "Legal Work",
+    description: "Work I supported as a legal assistant and intern, alongside my university research in copyright law.",
+    experienceLink: "View work history",
   },
   blog: {
     title: "Blog",
@@ -131,9 +131,10 @@ const en = {
 };
 
 const vi: typeof en = {
-  nav: { projects: "Dự án", experience: "Kinh nghiệm", services: "Dịch vụ", blog: "Blog", tools: "Công cụ", wordpress: "WordPress", contact: "Liên hệ" },
+  nav: { projects: "Dự án", experience: "Kinh nghiệm", services: "Nghiệp vụ", blog: "Blog", tools: "Công cụ", wordpress: "WordPress", contact: "Liên hệ" },
   hero: {
-    bio: "Xin chào 👋 Tôi là Huy, cử nhân Luật Tài chính – Ngân hàng (UEL) với gần 1,5 năm kinh nghiệm làm Trợ lý Luật sư tại Công ty Luật TNHH Quang Minh Tuệ và Trợ lý Quản tài viên trong các vụ việc phá sản doanh nghiệp. Tôi soạn thảo, rà soát hợp đồng, đơn khởi kiện và chuẩn bị hồ sơ tố tụng dân sự; trước đó từng thực tập tại Tòa án Nhân dân Quận Tân Bình và Văn phòng Thừa phát lại Sài Gòn – Thủ Đức. Mục tiêu của tôi là trở thành luật sư tố tụng có nền tảng chuyên môn vững vàng.",
+    bio: "Tôi là Huy, Trợ lý Luật sư và cử nhân Luật Tài chính – Ngân hàng. Tôi tùy biến và duy trì website mã nguồn mở này bằng Next.js, TypeScript và MDX để chia sẻ kinh nghiệm hỗ trợ tố tụng dân sự, phá sản doanh nghiệp và đăng bài viết pháp lý bằng tiếng Việt và tiếng Anh.",
+    projectLink: "Xem dự án website này",
     strengths: [
       { label: "Tố tụng dân sự", value: "Soạn đơn khởi kiện, chuẩn bị chứng cứ, tham gia tố tụng cùng luật sư" },
       { label: "Hợp đồng", value: "Soạn thảo, rà soát hợp đồng và văn bản pháp lý" },
@@ -175,10 +176,9 @@ const vi: typeof en = {
     locationValue: "TP. Thủ Đức, TP. Hồ Chí Minh",
   },
   services: {
-    title: "Dịch vụ",
-    description: "Những công việc tôi có thể hỗ trợ Quý văn phòng ở vị trí Trợ lý luật sư: xử lý hồ sơ, soạn thảo văn bản, nghiên cứu pháp lý và hỗ trợ tố tụng.",
-    includes: "Bao gồm",
-    cta: "Liên hệ trao đổi",
+    title: "Nghiệp vụ pháp lý",
+    description: "Những công việc mình đã tham gia khi làm trợ lý và thực tập, cùng đề tài nghiên cứu về quyền tác giả ở trường.",
+    experienceLink: "Xem quá trình làm việc",
   },
   blog: {
     title: "Blog",

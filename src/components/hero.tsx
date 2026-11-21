@@ -33,10 +33,15 @@ export default function Hero({ locale = "en" }: { locale?: Locale }) {
       <h3 className="mt-1 text-lg">
         {locale === "vi" ? "Trợ lý Luật sư · Luật Tài chính – Ngân hàng" : portfolioConfig.tagline} <span className="sr-only">tagline</span>
       </h3>
-      <p className="mt-4 mb-4 max-w-2xl text-foreground/85">
-        {t.hero.bio}
-        <span className="sr-only">bio</span>
-      </p>
+      <div className="mt-4 mb-4 max-w-2xl space-y-2 text-foreground/85">
+        <p>{t.hero.bio}</p>
+        <Link
+          href={localePath(locale, "/projects/portfolio-github-pages")}
+          className="inline-block text-sm font-medium text-primary underline underline-offset-4"
+        >
+          {t.hero.projectLink}
+        </Link>
+      </div>
       <Socials locale={locale} />
       {/* Strengths (src/i18n → hero.strengths), then counts from the site's own content (hidden while 0) */}
       <div className="flex flex-col text-sm space-y-2 max-w-2xl text-foreground/85 mt-4 mb-2 lg:mb-4">

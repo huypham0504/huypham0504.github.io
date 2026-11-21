@@ -47,9 +47,9 @@ export const getResume = (locale: Locale) => (locale === "vi" ? variant ?? resum
 export const getSiteText = (locale: Locale) =>
   locale === "vi"
     ? {
-        title: "HuyPham | Trợ lý Luật sư",
+        title: "Phạm Quốc Huy | Portfolio cá nhân",
         description:
-          "Phạm Quốc Huy — Trợ lý Luật sư với gần 1,5 năm kinh nghiệm tại Công ty Luật TNHH Quang Minh Tuệ và các vụ việc phá sản doanh nghiệp; soạn thảo hợp đồng, đơn khởi kiện, hồ sơ tố tụng dân sự. Cử nhân Luật Tài chính – Ngân hàng (Trường ĐH Kinh tế – Luật, ĐHQG TP.HCM).",
+          "Portfolio cá nhân của Phạm Quốc Huy, giới thiệu dự án website mã nguồn mở Việt–Anh dùng Next.js và MDX, kinh nghiệm Trợ lý Luật sư và các bài viết pháp lý.",
       }
     : { title: siteConfig.title, description: siteConfig.description };
 

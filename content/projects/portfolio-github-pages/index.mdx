@@ -1,0 +1,21 @@
+---
+title: "Bilingual portfolio on GitHub Pages"
+description: "An open-source personal website I adapted and maintain with Next.js, TypeScript and MDX."
+date: "2026-11-20"
+priority: 0
+tags: ["Next.js", "TypeScript", "MDX", "GitHub Actions"]
+links:
+  - name: "Source code on GitHub"
+    url: "https://github.com/huypham0504/huypham0504.github.io"
+image: "./cover.webp"
+---
+
+## What I maintain
+
+I adapted this portfolio to document my work, publish legal articles and learn how to maintain a bilingual website. I edit the Vietnamese and English MDX entries, add tables, diagrams and checklists to articles, and update the online CV and its downloadable PDF.
+
+## How the site works
+
+Projects and articles have two source files, `index.mdx` for English and `index.vi.mdx` for Vietnamese. Velite processes the content at build time. Next.js exports a static site to `out`, and [GitHub Actions](https://github.com/huypham0504/huypham0504.github.io/blob/main/.github/workflows/nextjs.yml) deploys it to GitHub Pages when changes land on `main`.
+
+This is a personal, non-commercial project adapted from [Hoang Pham’s portfolio template](https://github.com/hoangpham2263/hoangpham2263.github.io). The [source code](https://github.com/huypham0504/huypham0504.github.io) is available under the AGPL-3.0 license.

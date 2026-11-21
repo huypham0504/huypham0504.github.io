@@ -10,7 +10,7 @@ export const navbarConfig: NavItem[] = [
     url: "/experience"
   },
   {
-    title: "Services",
+    title: "Legal Work",
     url: "/services",
   },
   {

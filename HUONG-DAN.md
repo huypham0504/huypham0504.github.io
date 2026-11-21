@@ -12,7 +12,7 @@ Site là Next.js xuất tĩnh (`output: "export"`), đẩy lên GitHub là **t�
 | Nút liên hệ (điện thoại, email, Facebook, GitHub) ở trang chủ | `src/config/portfolio.config.ts` |
 | Đoạn giới thiệu ở trang chủ | `src/i18n/index.ts` → `hero.bio` (cả bản `en` và `vi`) |
 | Trang Liên hệ | `src/views/contact.tsx` |
-| Trang Dịch vụ | `src/config/services.config.ts` |
+| Trang Nghiệp vụ pháp lý (`/services`) | `src/config/legal-work.config.ts` |
 | Trang Experience | `src/config/experience.config.ts` |
 | Danh sách kỹ năng (trang chủ) | `src/config/skills.config.ts` |
 | Trang /cv (bản web của CV) | `src/config/resume.config.ts` |
