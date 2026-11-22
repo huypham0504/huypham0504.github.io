@@ -42,8 +42,9 @@ export const ogLocale = (locale: Locale) => (locale === "vi" ? "vi_VN" : "en_US"
 const en = {
   nav: { projects: "Projects", experience: "Experience", services: "Legal Work", blog: "Blog", tools: "Tools", wordpress: "WordPress", contact: "Contact" },
   hero: {
-    bio: "I'm Huy, a legal assistant and Finance & Banking Law graduate, now in the Lawyer Training Programme at the Judicial Academy. I adapted and maintain this open-source website with Next.js, TypeScript and MDX. I use it to share my experience supporting civil litigation and corporate bankruptcy cases, and to publish legal articles in Vietnamese and English.",
-    projectLink: "About this web project",
+    projectIntro: "I adapted and maintain this open-source portfolio with Next.js, TypeScript and MDX. It publishes Vietnamese and English content as a static site on GitHub Pages.",
+    projectLink: "Explore how this site is built",
+    bio: "I'm Huy, a legal assistant and Finance & Banking Law graduate currently in the Lawyer Training Programme at the Judicial Academy. I share my experience supporting civil litigation and corporate bankruptcy cases, along with articles on Vietnamese law.",
     strengths: [
       { label: "Civil litigation", value: "Statements of claim, evidence, attending proceedings with lawyers" },
       { label: "Contracts", value: "Drafting and reviewing contracts and legal documents" },
@@ -133,8 +134,9 @@ const en = {
 const vi: typeof en = {
   nav: { projects: "Dự án", experience: "Kinh nghiệm", services: "Nghiệp vụ", blog: "Blog", tools: "Công cụ", wordpress: "WordPress", contact: "Liên hệ" },
   hero: {
-    bio: "Tôi là Huy, Trợ lý Luật sư, cử nhân Luật Tài chính – Ngân hàng và đang theo học chương trình đào tạo nghề Luật sư tại Học viện Tư pháp. Tôi tùy biến và duy trì website mã nguồn mở này bằng Next.js, TypeScript và MDX để chia sẻ kinh nghiệm hỗ trợ tố tụng dân sự, phá sản doanh nghiệp và đăng bài viết pháp lý bằng tiếng Việt và tiếng Anh.",
-    projectLink: "Xem dự án website này",
+    projectIntro: "Tôi tùy biến và duy trì portfolio mã nguồn mở này bằng Next.js, TypeScript và MDX. Website có hai bản Việt–Anh và được triển khai dưới dạng trang tĩnh trên GitHub Pages.",
+    projectLink: "Xem cách website được xây dựng",
+    bio: "Tôi là Huy, Trợ lý Luật sư, cử nhân Luật Tài chính – Ngân hàng và đang theo học chương trình đào tạo nghề Luật sư tại Học viện Tư pháp. Tôi chia sẻ kinh nghiệm hỗ trợ tố tụng dân sự, phá sản doanh nghiệp và các bài viết về pháp luật Việt Nam.",
     strengths: [
       { label: "Tố tụng dân sự", value: "Soạn đơn khởi kiện, chuẩn bị chứng cứ, tham gia tố tụng cùng luật sư" },
       { label: "Hợp đồng", value: "Soạn thảo, rà soát hợp đồng và văn bản pháp lý" },

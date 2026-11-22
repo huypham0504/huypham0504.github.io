@@ -14,8 +14,26 @@ image: "./cover.webp"
 
 Tôi tùy biến và duy trì portfolio này để ghi lại kinh nghiệm làm việc, công bố các bài viết pháp lý và thực hành quản lý một website song ngữ. Tôi biên soạn các bản Việt–Anh trong MDX, thêm bảng, sơ đồ và checklist vào bài viết, đồng thời cập nhật CV trên web và bản PDF tải xuống.
 
-## Website hoạt động thế nào?
+## Một bài viết, hai ngôn ngữ
 
-Các bài viết và dự án có hai tệp `index.mdx` (tiếng Anh) và `index.vi.mdx` (tiếng Việt). Velite xử lý nội dung khi build. Next.js xuất website tĩnh vào thư mục `out`, sau đó [GitHub Actions](https://github.com/huypham0504/huypham0504.github.io/blob/main/.github/workflows/nextjs.yml) triển khai lên GitHub Pages khi có thay đổi trên nhánh `main`.
+Tôi lưu hai bản của bài viết về gửi giấy đòi nợ trong cùng một thư mục. Hai bản dùng chung slug `gui-giay-doi-no-cho-quan-tai-vien` và có tiêu đề, ảnh bìa, nội dung riêng.
+
+- Bản tiếng Việt dùng `index.vi.mdx` và đường dẫn bắt đầu bằng `/blog/`. [Tệp MDX](https://github.com/huypham0504/huypham0504.github.io/blob/main/content/blogs/gui-giay-doi-no-cho-quan-tai-vien/index.vi.mdx) · [Trang tiếng Việt](/blog/gui-giay-doi-no-cho-quan-tai-vien)
+- Bản tiếng Anh dùng `index.mdx` và đường dẫn bắt đầu bằng `/en/blog/`. [Tệp MDX](https://github.com/huypham0504/huypham0504.github.io/blob/main/content/blogs/gui-giay-doi-no-cho-quan-tai-vien/index.mdx) · [Trang tiếng Anh](/en/blog/gui-giay-doi-no-cho-quan-tai-vien)
+
+Khi build, Velite kiểm tra dữ liệu mô tả, biên dịch MDX và xác định ngôn ngữ từ tên tệp. Next.js xuất các trang tĩnh vào `out/`. Khi có thay đổi trên nhánh `main`, GitHub Actions tải thư mục này lên và triển khai qua GitHub Pages. [Cấu hình Velite](https://github.com/huypham0504/huypham0504.github.io/blob/main/velite.config.ts) · [Quy trình triển khai](https://github.com/huypham0504/huypham0504.github.io/blob/main/.github/workflows/nextjs.yml)
+
+## Chạy thử trên máy
+
+Clone repo và chạy các lệnh sau từ thư mục gốc với Node.js 20 và Corepack đã cài. Corepack dùng đúng phiên bản Yarn 3.5.0 được ghi trong `package.json`.
+
+```bash
+corepack yarn install --immutable
+corepack yarn dev
+```
+
+Mở `http://localhost:3000` rồi truy cập hai đường dẫn bài viết ở trên. Nếu sửa tệp MDX, khởi động lại máy chủ phát triển để Velite tạo lại nội dung.
+
+## Ghi công
 
 Website là dự án cá nhân phi thương mại. Tôi phát triển phiên bản này từ [mẫu portfolio của Hoàng Phạm](https://github.com/hoangpham2263/hoangpham2263.github.io). [Mã nguồn](https://github.com/huypham0504/huypham0504.github.io) được công khai theo giấy phép AGPL-3.0.

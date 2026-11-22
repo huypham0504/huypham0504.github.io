@@ -14,8 +14,26 @@ image: "./cover.webp"
 
 I adapted this portfolio to document my work, publish legal articles and learn how to maintain a bilingual website. I edit the Vietnamese and English MDX entries, add tables, diagrams and checklists to articles, and update the online CV and its downloadable PDF.
 
-## How the site works
+## One article, two languages
 
-Projects and articles have two source files, `index.mdx` for English and `index.vi.mdx` for Vietnamese. Velite processes the content at build time. Next.js exports a static site to `out`, and [GitHub Actions](https://github.com/huypham0504/huypham0504.github.io/blob/main/.github/workflows/nextjs.yml) deploys it to GitHub Pages when changes land on `main`.
+I keep both versions of my article about filing a creditor claim in the same folder. They share the slug `gui-giay-doi-no-cho-quan-tai-vien` and have separate titles, covers and text.
+
+- Vietnamese uses `index.vi.mdx` and a route under `/blog/`. [MDX source](https://github.com/huypham0504/huypham0504.github.io/blob/main/content/blogs/gui-giay-doi-no-cho-quan-tai-vien/index.vi.mdx) · [Vietnamese page](/blog/gui-giay-doi-no-cho-quan-tai-vien)
+- English uses `index.mdx` and a route under `/en/blog/`. [MDX source](https://github.com/huypham0504/huypham0504.github.io/blob/main/content/blogs/gui-giay-doi-no-cho-quan-tai-vien/index.mdx) · [English page](/en/blog/gui-giay-doi-no-cho-quan-tai-vien)
+
+At build time, Velite validates the metadata, compiles the MDX and assigns the language based on the filename. Next.js exports the pages to `out/`. When changes reach `main`, GitHub Actions uploads that directory and deploys it to GitHub Pages. [Velite configuration](https://github.com/huypham0504/huypham0504.github.io/blob/main/velite.config.ts) · [Deployment workflow](https://github.com/huypham0504/huypham0504.github.io/blob/main/.github/workflows/nextjs.yml)
+
+## Preview locally
+
+Clone the repository and run these commands from its root with Node.js 20 and Corepack installed. Corepack uses the Yarn 3.5.0 version pinned in `package.json`.
+
+```bash
+corepack yarn install --immutable
+corepack yarn dev
+```
+
+Open `http://localhost:3000` and use the two article paths above. If you edit the MDX, restart the development server to regenerate the content with Velite.
+
+## Credits
 
 This is a personal, non-commercial project adapted from [Hoang Pham’s portfolio template](https://github.com/hoangpham2263/hoangpham2263.github.io). The [source code](https://github.com/huypham0504/huypham0504.github.io) is available under the AGPL-3.0 license.
